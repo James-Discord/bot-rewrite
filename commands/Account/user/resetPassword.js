@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
 
     const embed = new Discord.MessageEmbed()
         .setTitle("Password Reset")
-        .setDescription("Resetting your password...")
+        .setDescription("Resetting your password!")
         .setTimestamp()
 
     let msg = await message.author.send({
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
         return;
     });
 
-    message.reply("Check your DMs! 📬");
+    message.reply("Check your **DMs**! 📬");
 
     const password = genPassword();
 
