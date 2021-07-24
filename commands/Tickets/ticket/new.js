@@ -5,7 +5,7 @@ const row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
 					.setCustomId('donated')
-					.setLabel('Donated')
+					.setLabel('Donation')
 					.setStyle('PRIMARY'),
 			)
             .addComponents(
