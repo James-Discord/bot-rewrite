@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
 
     let embed = new MessageEmbed()
         .setTitle("Help!").setColor("BLUE").setDescription("Commands Help list");
-        .setFooter(`Requested by ${message.author.tag}`).setTimestamp();
+        .setFooter(`Requested by ${message.author.tag}`).setTimestamp()
 
     if (args[0] == null) {
         for (const category of parsed.categories.filter(x => x.name != '_ignored')) {
