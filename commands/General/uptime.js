@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
             new MessageEmbed()
                 .setTitle(`DanBot Hosting Bot Uptime`)
                 .setColor("#6f89d9").addField("Uptime:", humanizeDuration(client.uptime, { round: true }))
-                .addField("Memory usage:", Math.trunc((process.memoryUsage().heapUsed) / 1024 / 1000) + "mb", true)
+                .addField("Memory usage:", Math.trunc((process.memoryUsage().heapUsed) / 1024 / 1000) + "MB", true)
                 .setFooter(`Requested by ${message.author.tag}`).setTimestamp()
         ]
     });
