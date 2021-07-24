@@ -1,7 +1,7 @@
 module.exports.run = (client, message, args) => {
     userData.delete(message.author.id)
     message.channel.send({
-        embeds: [new MessageEmbed().setTitle("Account Unlink!").setColor("#36393F")
+        embeds: [new MessageEmbed().setTitle("Account Unlink").setColor("#36393F")
         .addField(`Your account has now been unlinked from this discord account!`)
         .setFooter(`Requested by ${message.author.tag}`).setTimestamp()]
     });
