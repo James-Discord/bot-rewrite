@@ -24,7 +24,7 @@ let questions = [
         afterChecks: [
             {
                 check: (msg) => validator.isEmail(msg.toLowerCase().trim()),
-                errorMessage: "the email must be valid.",
+                errorMessage: "The email you entered is not valid!",
             }
         ],
         time: 30000,
