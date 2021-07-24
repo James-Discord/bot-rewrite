@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     // Check to see if they already have an account
     const userData = await userdb.findOne({ userID: message.author.id });
     if (!userData) return message.reply({
-        content: "You do not have a `panel account` linked to your discord!"
+        content: "You do not have a `panel account` currently linked to your discord!"
             + "\n" + `Use \`${config.discord.bot.prefix}user new\` to create an account and get started.`
     })
 
@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
     let msg = await message.author.send({
         embeds: [embed]
     }).catch(e => {
-        message.channel.send({ content: "Failed to send you a DM, please Make sure your dms are open." });
+        message.channel.send({ content: "Failed to send you a DM, please make sure your dms are open!" });
         return;
     });
 
