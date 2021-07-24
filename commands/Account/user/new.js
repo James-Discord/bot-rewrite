@@ -37,7 +37,7 @@ module.exports.run = async (client, message, args) => {
     // Check to see if they already have an account
     const userData = await userdb.findOne({ userID: message.author.id });
     if (userData) return message.reply({
-        content: "You already have a `panel account` linked to your discord account!"
+        content: "You already have a `panel account` linked to your discord account! If you would like it unlinked do DBH!user unlink !"
     })
 
     // Locate the category
