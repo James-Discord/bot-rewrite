@@ -13,7 +13,7 @@ let questions = [
         filter: (m) => m.author.id === message.author.id, // Filter to use...
         afterChecks: [{
             check: (msg) => msg.trim().split(" ").length == 1,
-            errorMessage: "username must not contain any spaces",
+            errorMessage: "Usernames can not have any spaces in them!",
         }],
         time: 30000, // how much time a user has to answer the question before it times out
         value: null // The user's response.
